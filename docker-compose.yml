@@ -4,9 +4,6 @@ services:
   app:
     container_name: back-php
     image: bloondedocker/php8.1
-  #  environment:
- #     - APACHE_RUN_USER=#${UID}
-  #    - APACHE_RUN_GROUP=#${UID}
     working_dir: /var/www/html
     volumes:
       - ./docker-laravel/vhost.conf:/etc/apache2/sites-available/000-default.conf
