@@ -26,6 +26,7 @@ class RegisteredUserController extends Controller
             'email' => $request->email,
             'password' => bcrypt($request->password)
         ]);
+        //También se puede encriptar la contraeña con Hash::make($request->password)
 
       // autenticar automaticamente:   Auth::login($user);
 
